@@ -1,4 +1,10 @@
 <?php
+// move these to defines.php and set them as constants
+// create a key generator - a la Wordpress - to generate all random values
+$algorythm = 'sha512';
+$salt = '#+pT%B[M1X3R),Z(Y+q_tZwX~l@DXum2PdHS8hvmaVENrmI_?cvE#j8]n^.u]Ni+'; // changeme
+$rcryptsession = 'rcrypt'; // changeme
+
 function user_register($username, $password, $email) {
 	nuukdb();
 
