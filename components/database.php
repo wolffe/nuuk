@@ -4,8 +4,6 @@
  *
  * A procedural PHP framework with support for the latest PHP technologies
  *
- * The MIT License (MIT)
- *
  * Copyright (c) 2015 Ciprian Popescu
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,7 +28,7 @@
  * @package    Nuuk Framework
  * @author     Ciprian Popescu <getbutterfly@gmail.com>
  * @copyright  2012-2015 Ciprian Popescu
- * @license    http://opensource.org/licenses/MIT
+ * @license    MIT License (MIT) http://opensource.org/licenses/MIT
  * @version    0.1-build12
  * @link       http://getbutterfly.com/nuuk/
  */
