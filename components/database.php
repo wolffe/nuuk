@@ -2,9 +2,9 @@
 /**
  * Nuuk Framework
  *
- * A procedural PHP framework with support for the latest PHP technologies
+ * A procedural PHP PDO framework with support for the latest PHP technologies
  *
- * Copyright (c) 2015 Ciprian Popescu
+ * Copyright (c) 2015, 2016 Ciprian Popescu
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,10 +27,10 @@
  * @category   Component
  * @package    Nuuk Framework
  * @author     Ciprian Popescu <getbutterfly@gmail.com>
- * @copyright  2012-2015 Ciprian Popescu
+ * @copyright  2012-2016 Ciprian Popescu
  * @license    MIT License (MIT) http://opensource.org/licenses/MIT
- * @version    0.1-build12
- * @link       http://getbutterfly.com/nuuk/
+ * @version    0.1-build13
+ * @link       https://getbutterfly.com/nuuk/
  */
 
 define('DBHOST', 'localhost');
@@ -63,6 +63,9 @@ define('DBPREFIX', 'nuuk_');
 // this code will prepare and execute a query
 $nuuk = $nuukdb->prepare("INSERT INTO users (username, password, registration) VALUES ('$username', '$password', NOW())");
 $nuuk->execute();
+
+// this code will get the last inserted ID
+$nuuk_last_id = $nuukdb->lastInsertId();
 
 // this code will get a row and make it available using $user['password']
 $nuuk = $nuukdb->prepare("SELECT * FROM users WHERE username='$username'");
