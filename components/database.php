@@ -56,6 +56,9 @@ define('DBPREFIX', 'nuuk_');
     $nuukdb = new PDO('mysql:host=' . DBHOST . ';dbname=' . DBNAME . ';charset=utf8', DBUSER, DBPASS);
     $nuukdb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $nuukdb->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+
+    // optionally return the object
+    // return $nuukdb;
   }
 /*
 // all code chunks below are samples
